@@ -41,3 +41,7 @@ Results can be view in the CLI (or in GitHub output) and there is also a video /
 1/ You will first need to clone / open the test project.
 2/ You should then carry out an 'npm install' to get all of the required dependencies.
 3/ You should then either open Cypress using the command `npm run cypress:open` and run tests or use the command `npm run test` from the command line (in project root).
+
+## Schedule
+
+The tests are scheduled to run at 2am each night using a GitHub workflow (schedule.yml). 
