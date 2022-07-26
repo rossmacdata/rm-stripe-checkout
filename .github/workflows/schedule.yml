@@ -1,0 +1,38 @@
+# runs tests for push-events, for pull requests and using cron schedule:
+name: Run Stripe Checkout Tests
+on:
+  push:
+    # runs tests for commits pushed to master
+    branches:
+      - main
+    # do not run tests if file README.md changes
+    paths-ignore:
+      - 'README.md'
+    # run tests for GitHub Pull requests. Test result is visible in the Pull Request page.
+  pull_request:
+    paths-ignore:
+      - 'README.md'
+  schedule:
+    # run tests nightly, at 2am
+    - cron:  '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+    run_tests:
+        runs-on: ubuntu-latest
+        steps:
+        # checkout code from a repository
+        - uses: actions/checkout@v2
+        #run API tests
+        - name: Setup Node
+          uses: actions/setup-node@v1
+          with:
+            node-version: 12
+        # Install dependencies
+        - run: |
+            cd rm-stripe-checkout
+            npm install
+        # Run tests
+        - run: |
+            cd rm-stripe-checkout
+            npm run test
