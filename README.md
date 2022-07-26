@@ -47,4 +47,6 @@ Results can be view in the CLI (or in GitHub output) and there is also a video /
 
 ## Schedule
 
-The tests are scheduled to run at 2am each night using a GitHub workflow (schedule.yml). 
+The tests are scheduled to run at 2am each night using a GitHub workflow (schedule.yml).
+
+Workflow can be viewed on [GitHub](https://github.com/rossmacdata/rm-stripe-checkout)
