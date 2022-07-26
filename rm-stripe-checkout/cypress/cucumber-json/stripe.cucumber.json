@@ -1,0 +1,202 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Stripe checkout functionality",
+    "line": 1,
+    "id": "stripe-checkout-functionality",
+    "tags": [],
+    "uri": "stripe.feature",
+    "elements": [
+      {
+        "id": "stripe-checkout-functionality;open-stripe-checkout-and-ensure-all-expected-page-elements-exist",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Open Stripe checkout and ensure all expected page elements exist",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open Stripe checkout demo page",
+            "result": {
+              "status": "passed",
+              "duration": 17251000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "all page elements exist",
+            "result": {
+              "status": "passed",
+              "duration": 867000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stripe-checkout-functionality;open-stripe-checkout-and-carry-out-a-valid-transaction",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Open Stripe checkout and carry out a valid transaction",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I open Stripe checkout demo page",
+            "result": {
+              "status": "passed",
+              "duration": 6286000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I complete the form with valid card details and click pay",
+            "result": {
+              "status": "passed",
+              "duration": 14294000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I verify that payment was successful",
+            "result": {
+              "status": "passed",
+              "duration": 3022000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stripe-checkout-functionality;open-stripe-checkout-and-carry-out-a-valid-transaction-that-requires-authorisation",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Open Stripe checkout and carry out a valid transaction that requires authorisation",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I open Stripe checkout demo page",
+            "result": {
+              "status": "passed",
+              "duration": 3549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I complete the form with valid card details that requires authorisation and click pay",
+            "result": {
+              "status": "passed",
+              "duration": 10532000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I reach 3D Secure authentication",
+            "result": {
+              "status": "passed",
+              "duration": 4777000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stripe-checkout-functionality;open-stripe-checkout-and-carry-out-a-transaction-with-details-that-will-be-declined",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Open Stripe checkout and carry out a transaction with details that will be declined",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I open Stripe checkout demo page",
+            "result": {
+              "status": "passed",
+              "duration": 3807000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I complete the form with invalid card details and click pay",
+            "result": {
+              "status": "passed",
+              "duration": 9974000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I verify that payment was declined",
+            "result": {
+              "status": "passed",
+              "duration": 4477000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "stripe-checkout-functionality;open-stripe-checkout-and-carry-out-a-transaction-with-incomplete-card-details",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Open Stripe checkout and carry out a transaction with incomplete card details",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I open Stripe checkout demo page",
+            "result": {
+              "status": "passed",
+              "duration": 7215000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I complete the form with incomplete card details and click pay",
+            "result": {
+              "status": "passed",
+              "duration": 12570000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I verify that payment does not complete due to incomplete details",
+            "result": {
+              "status": "passed",
+              "duration": 2141000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

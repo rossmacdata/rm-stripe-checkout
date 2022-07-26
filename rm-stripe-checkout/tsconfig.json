@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "types": ["cypress", "node"],
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "noImplicitAny": false
+  }
+}

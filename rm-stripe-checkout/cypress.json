@@ -1,0 +1,7 @@
+{
+  "chromeWebSecurity": false,
+  "testFiles": "**/*.{feature,features}",
+  "ignoreTestFiles": ["*.js", "*.ts", "*.md"],
+  "viewportHeight": 720,
+  "viewportWidth": 1280
+}
