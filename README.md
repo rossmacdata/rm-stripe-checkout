@@ -35,6 +35,7 @@ Results can be view in the CLI (or in GitHub output) and there is also a video /
 - Think more about data and how to abstract it from the pages file. Potentially add to its own support file.
 - Extend the use of frames. I would dig deeper in the DOM to complete the authorisation of 3DS and view payment completion message.
 - If there were more features and scenarios to present results for, I would add a more detailed and user friendly report (e.g. Allure).
+- Browser and device testing. Would be relatively straight forward to implement this.
 
 ## Running the Tests
 
