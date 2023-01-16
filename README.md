@@ -1,4 +1,4 @@
-# Stripe Checkout Demo
+# Stripe Checkout Cypress / BDD Demo
 
 This readme describes my approach to testing the [Stripe Checkout Demo](https://checkout.stripe.dev/preview) page.
 
