@@ -1,8 +1,8 @@
 # Stripe Checkout Demo
 
-This readme describes my approach to testing the [Stripe Checkout Demo](https://checkout.stripe.dev/preview) page assigned for the QA take home test for MoonPay.
+This readme describes my approach to testing the [Stripe Checkout Demo](https://checkout.stripe.dev/preview) page.
 
-I really enjoyed working on this and have used the following to demonstrate some of the skills I have learned and continue to develop as an experienced QA professional:
+This repo demonstrates:
 
 - Cucumber BDD
 - Cypress framework using the page object model (POM) design pattern, written in TypeScript
